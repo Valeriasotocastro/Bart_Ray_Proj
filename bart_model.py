@@ -8,21 +8,7 @@ data = pd.read_csv('Datos_Bart_C.csv', delimiter=';')
 
 print(data)
 
-# Obtener las características (X) y la variable objetivo (y)
-#X = data[['Feature1', 'Feature2']].values
-#y = data['Target'].values
-
-# def build_bart_model(X, y):
-  #  with pm.Model() as bart_model:
-        # (Aquí incluirías la definición del modelo BART similar al ejemplo anterior)
-        # ...
-        # Retorna el modelo BART
-   #     return bart_model
-    
-
-# Variables predictoras (X) y variable de respuesta (y)
-X = data[['X1', 'X2', 'X3']].values
-y = data['y'].values
+#Definir Variables
 
 # Modelo BART
 with pm.Model() as bart_model:
